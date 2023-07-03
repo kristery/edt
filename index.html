@@ -47,6 +47,10 @@
         color: cornflowerblue;
         font-weight: bold;
     }
+    #vis {
+        width: 300%; /* You can set this to whatever you want, like 500px, or keep it 100% for full width */
+        height: auto; /* This will keep the aspect ratio of the video */
+    }
 </style>
 </head>
 <body>
@@ -155,11 +159,10 @@
         <source src="./static/videos/vis.mp4"
                 type="video/mp4">
       </video>
-      <!-- <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2> -->
+      <video id="vis" autoplay muted loop playsinline>
+        <source src="./static/videos/edt_teaser_long.mp4"
+                type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
@@ -298,7 +301,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-4 colored-bold">Summary</h2>
         <div class="publication-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/WOYe0A5W4T0" title="YouTube video player" frameborder="0" 
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/P518FtXEeSM" title="YouTube video player" frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
